@@ -1,0 +1,13 @@
+/systemload/*.txt
+/systemload/hlp
+/systemload/refedict
+/systemload/sxsbra
+*.txt
+/12.1.27/systemload/mzp
+hlp
+hlpdf
+refedict
+sdfbra
+sxsbra
+sx2_unq
+*.bat
