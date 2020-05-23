@@ -1,6 +1,12 @@
 @setlocal enableextensions enabledelayedexpansion
 @echo off
 
+ 
+	if exist %SQLITE_PTH% (
+        del %SQLITE_PTH% sc*.* /s /q
+        del %SQLITE_PTH% temp*.* /s /q
+    )
+
 	if exist .\sxsbra (
 		attrib .\sxsbra* +r /s /d
     )
@@ -17,6 +23,10 @@
 		attrib .\sdfrmv.bat +r /s /d
     )
 
+    if exist .\sdfunq.bat (
+		attrib .\sdfunq.bat +r /s /d
+    )
+    
 	if exist .\sdfhlp.bat (
 		attrib .\sdfhlp.bat +r /s /d
     )
